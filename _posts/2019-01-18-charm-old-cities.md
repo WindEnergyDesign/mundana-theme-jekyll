@@ -3,7 +3,7 @@ layout: post
 title:  "Our Team"
 author: jane
 categories: [ Jekyll, tutorial ]
-image: assets/images/Our Team Photo 2018.jpg
+image: assets/images/Home.jpg
 tags: [sticky]
 ---
 

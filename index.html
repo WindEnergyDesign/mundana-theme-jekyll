@@ -19,7 +19,6 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
     <div class="row justify-content-between">
-        <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
     <div class="card border-0 mb-4 box-shadow">   
     <a href="{{site.baseurl}}{{latest_post.url}}">
     <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     

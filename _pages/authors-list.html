@@ -4,37 +4,30 @@ layout: default
 permalink: "/authors-list.html"
 ---
 
-
-## Sponsor link in navbar
-
-If you have a GitHub sponsors account set up, you can add your username to `gh_sponsor` in the `_config.yml` file and it will display a link to your profile on the right of the navbar.
-
-```yaml
-gh_sponsor: chrisrhymes
-```
-
-## Creating a Sponsors Datafile
-
-If you would like to create a page to thank your sponsors then create a data file, such as my_sponsors.yml file with the following structure:
-
-```yaml
-- tier_name: Platinum Sponsors
-  size: large
-  description: |-
-    This is the description for the Platinum Tier
-  sponsors:
-    - name: Dave McDave
-      profile: https://github.com/
-    - name: Sarah Lee-Cheesecake
-      profile: https://github.com/
-- tier_name: Gold Sponsors
-  description: |-
-    This is the description for the Gold Tier
-  sponsors:
-    - name: Dave McDave
-      profile: https://github.com/
-```
-
-The `tier_name` and `description` are required. The `size` is not required, but can be overwritten to 'large' or 'small' to increase or decrease the size of the box and the text size.
- 
-The sponsors require a name, but not a profile link.
+<div class="container">
+<h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
+    <div class="row gap-y listrecent listrecent listauthor">
+    {% for author in site.authors %}
+        <div class="col-lg-6 mb-4">
+            <div class="p-4 border rounded">
+            <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
+            <div class="col-md-9">
+            <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}">
+            <h4 class="text-dark mb-0"> {{ author[1].name }} </h4>
+            <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
+            <div class="excerpt">{{ author[1].bio }}</div>
+            </a>
+            <div class="icon-block mt-3 d-flex justify-content-between">  
+            <div>
+            <a target="_blank" href="{{ author[1].twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a>  &nbsp;
+            <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

@@ -11,7 +11,7 @@ permalink: "/sponsors.html"
     {% for author in site.authors %}
         <div class="col-lg-6 mb-4">
             <!--Heart Icon-->
-            <p class="column is-centered">
+            <p class="subtitle has-text-centered">
                 <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
             </p>
             <div class="p-4 border rounded">

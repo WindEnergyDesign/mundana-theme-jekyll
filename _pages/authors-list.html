@@ -10,10 +10,13 @@ permalink: "/authors-list.html"
     {% for author in site.authors %}
  
     <div class="column is-12">
+     
+        <!-- Author icon -->
         <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
         <p class="title is-3 has-text-centered">
             <span>{{ author.author[1].name }}</span>
-
+        </p>
+      
         <!-- Name and description of Author-->
         <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}">
         <h4 class="text-dark mb-0"> {{ author[1].name }} </h4>
@@ -22,7 +25,7 @@ permalink: "/authors-list.html"
         </a>        
         
         <!--Heart Icon-->
-        </p>
+
         <p class="subtitle has-text-centered">
             <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
         </p>
@@ -34,7 +37,9 @@ permalink: "/authors-list.html"
             <div class="column is-6 content has-text-centered">
                 <p>{{ tier.description | markdownify }}</p>
             </div>
-        </div>   
+        </div>
+        </div>
+        </div>
         
 <!--        <div class="col-lg-6 mb-4">
             <div class="p-4 border rounded">

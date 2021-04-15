@@ -4,6 +4,7 @@ layout: default
 permalink: "/sponsors.html"
 ---
 
+
 <div class="container">
 <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
@@ -22,18 +23,15 @@ permalink: "/sponsors.html"
             <div>
             <a target="_blank" href="{{ author[1].twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a>  &nbsp;
             <a target="_blank" href="{{ author[1].site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
-           
-
-                        
             </div>
             </div>
             </div>
             </div>
-            </div>
-            <div class="column is-12">
-                <hr />
             </div>
         </div>
+        <div class="column is-12">
+            <hr />
+        </div>        
     {% endfor %}
     </div>
 </div>

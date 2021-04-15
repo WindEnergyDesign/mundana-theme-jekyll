@@ -12,7 +12,7 @@ permalink: "/sponsors.html"
         <div class="col-lg-6 mb-4">
             <!--Heart Icon-->
             <p class="subtitle has-text-centered">
-                <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
+                <span class="icon is-large is-centered gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
             </p>
             <div class="p-4 border rounded">
             <div class="row">

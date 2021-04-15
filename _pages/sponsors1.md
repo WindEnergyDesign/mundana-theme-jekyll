@@ -14,6 +14,20 @@ permalink: "/sponsors.html"
             <p class="subtitle has-text-centered">
                 <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
             </p>
+            <!--start of insert attempt-->
+            <div class="columns is-centered">
+                <div class="column is-6 content has-text-centered">
+                    <p>{{ tier.description | markdownify }}</p>
+                </div>
+            </div>
+            <div class="columns is-multiline is-centered">
+                {% for sponsor in tier.sponsors %}
+                <div class="column {% if tier.size == 'large' %} is-4-desktop is-6-tablet {% else %} is-3-desktop is-4-tablet {% endif %}">
+                    <div class="box has-text-centered">
+                        <p class="title {% if tier.size == 'large' %} is-4 {% elsif tier.size == 'small' %} is-6 {% else %} is-5 {% endif %}">
+                            {{ sponsor.name }}
+                        </p>
+            <!--End of insert attempt-->
             <div class="p-4 border rounded">
             <div class="row">
             <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80"></div>

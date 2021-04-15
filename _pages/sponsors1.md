@@ -11,9 +11,12 @@ permalink: "/sponsors.html"
         <div class="col-lg-6 mb-4">
             <div class="container">
             <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
-               <div class="row gap-y listrecent listrecent listauthor">
-               {% for author in site.authors %}
-                  <div class="col-lg-6 mb-4">
+                <div class="row gap-y listrecent listrecent listauthor">
+                {% for author in site.authors %}
+                    <div class="col-lg-6 mb-4">
+                        <div class="p-4 border rounded">
+                        <div class="row">
+                        <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80">
         </div>              
             <div class="p-4 border rounded">
             <div class="row">

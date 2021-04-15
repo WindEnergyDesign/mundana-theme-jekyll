@@ -30,6 +30,9 @@ permalink: "/sponsors.html"
             </div>
             </div>
             </div>
+            <div class="column is-12">
+                <hr />
+            </div>
         </div>
     {% endfor %}
     </div>

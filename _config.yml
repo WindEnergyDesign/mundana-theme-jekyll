@@ -19,14 +19,21 @@ plugins:
   - jekyll-seo-tag
 
 tiers:
-    platinum:
-      name:           Platinum Sponsor
-      
-    silver:
-      name:           Silver Sponsor
-    
-    Gold:
-      name:           Gold Sponsor
+  tier_name: Platinum Sponsors
+    size: large
+    description: |-
+      This is the description for the Platinum Tier
+    sponsors:
+        name: Dave McDave
+        profile: https://github.com/
+        name: Sarah Lee-Cheesecake
+        profile: https://github.com/
+  tier_name: Gold Sponsors
+    description: |-
+      This is the description for the Gold Tier
+    sponsors:
+        name: Dave McDave
+        profile: https://github.com/
 
 authors:
     sal:

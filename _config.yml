@@ -17,7 +17,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+
+tiers:
+    platinum:
+      name:           Platinum Sponsor
+      
+    silver:
+      name:           Silver Sponsor
+    
+    Gold:
+      name:           Gold Sponsor
+
 authors:
     sal:
       name:           Sal

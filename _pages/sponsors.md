@@ -3,7 +3,7 @@ layout: page
 title: Sponsors Page
 subtitle: An example sponsors page
 sponsors: example_sponsors
-permalink: "/sponsors.html"
+<!-- permalink: "/sponsors.html" -->
 show_sidebar: false
 ---
 

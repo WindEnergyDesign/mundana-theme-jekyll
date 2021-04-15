@@ -9,10 +9,6 @@ permalink: "/sponsors.html"
 <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
     {% for author in site.authors %}
-            <!--Heart Icon-->
-            <p class="subtitle has-text-centered">
-                <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
-            </p>
         <div class="col-lg-6 mb-4">
             <div class="p-4 border rounded">
             <div class="row">
@@ -33,10 +29,8 @@ permalink: "/sponsors.html"
             </div>
             </div>
         </div>
-        <!--Line after Author-->
     <div class="column is-12">
         <hr />
-    </div>  
-    {% endfor %}
     </div>
+    {% endfor %}
 </div>

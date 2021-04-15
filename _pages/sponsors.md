@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Sponsors
+title: Sponsors Page
 subtitle: An example sponsors page
 sponsors: example_sponsors
 show_sidebar: false
-<!--permalink: "/Sponsors.html"-->
 ---
 
 ## Sponsor link in navbar

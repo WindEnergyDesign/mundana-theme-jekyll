@@ -16,6 +16,11 @@ permalink: "/authors-list.html"
         <p class="subtitle has-text-centered">
             <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
         </p>
+        <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}">
+        <h4 class="text-dark mb-0"> {{ author[1].name }} </h4>
+        <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View Posts)</small>
+        <div class="excerpt">{{ author[1].bio }}</div>
+        </a>
         <div class="columns is-centered">
             <div class="column is-6 content has-text-centered">
                 <p>{{ author.description | markdownify }}</p>

@@ -9,13 +9,13 @@ permalink: "/sponsors.html"
 <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
     {% for author in site.authors %}
-        <div class="col-lg-6 mb-4">
-            <div class="p-4 border rounded">
-            <div class="row">
             <!--Heart Icon-->
             <p class="subtitle has-text-centered">
                 <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
             </p>
+        <div class="col-lg-6 mb-4">
+            <div class="p-4 border rounded">
+            <div class="row">
             <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
             <div class="col-md-9">
             <a href="{{site.baseurl}}/author-{{ author[1].name | slugify }}">
@@ -34,9 +34,9 @@ permalink: "/sponsors.html"
             </div>
         </div>
         <!--Line after Author-->
-        <div class="column is-12">
-            <hr />
-        </div>        
+    <div class="column is-12">
+        <hr />
+    </div>  
     {% endfor %}
     </div>
 </div>

@@ -10,6 +10,7 @@ permalink: "/authors-list.html"
     {% for author in site.authors %}
  
     <div class="column is-12">
+        <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ author[1].name }}" src="{{site.baseurl}}/{{ author[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
         <p class="title is-3 has-text-centered">
             <span>{{ author.author[1].name }}</span>
 
@@ -31,7 +32,7 @@ permalink: "/authors-list.html"
 
         <div class="columns is-centered">
             <div class="column is-6 content has-text-centered">
-                <p>{{ author.description | markdownify }}</p>
+                <p>{{ tier.description | markdownify }}</p>
             </div>
         </div>   
         
